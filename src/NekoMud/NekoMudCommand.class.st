@@ -1,5 +1,5 @@
 Class {
-	#name : #MudCommand,
+	#name : #NekoMudCommand,
 	#superclass : #Object,
 	#instVars : [
 		'name',
@@ -10,30 +10,30 @@ Class {
 }
 
 { #category : #accessing }
-MudCommand >> block [
+NekoMudCommand >> block [
 
 	^ block
 ]
 
 { #category : #accessing }
-MudCommand >> block: anObject [
+NekoMudCommand >> block: anObject [
 
 	block := anObject
 ]
 
 { #category : #accessing }
-MudCommand >> execute: ctx [
+NekoMudCommand >> execute: ctx [
 	^ self block value: ctx.
 ]
 
 { #category : #accessing }
-MudCommand >> name [
+NekoMudCommand >> name [
 
 	^ name
 ]
 
 { #category : #accessing }
-MudCommand >> name: anObject [
+NekoMudCommand >> name: anObject [
 
 	name := anObject
 ]

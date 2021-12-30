@@ -1,6 +1,6 @@
 Class {
 	#name : #SampleWorld,
-	#superclass : #MudWorld,
+	#superclass : #NekoMudWorld,
 	#category : #NekoMud
 }
 
@@ -10,16 +10,16 @@ SampleWorld >> initialize [
 	super initialize .
 	name := 'An Example World'.
 	
-	player := MudPlayer new.
+	player := NekoMudPlayer new.
 	player name: 'rsayers'.
 	player description: 'std human'.
 	
-	room := MudRoom new.
+	room := NekoMudRoom new.
 	room name: 'The Construct'.
 	room description: 'You are standing in a pure white void.'.
 	player location: room.
 	
-	item := MudItem new.
+	item := NekoMudItem new.
 	item name: 'A MarioKart64 Cartridge'.
 	item description: 'It''s in pretty decent shape, fancy a ride on rainbow road?'.
 	
@@ -30,7 +30,7 @@ SampleWorld >> initialize [
 	self move: player to: room.
 	self move: item to: room.
 	
-	cmd := MudCommand new.
+	cmd := NekoMudCommand new.
 	cmd name: 'look'.
 	cmd block: [ :ctx | Transcript show: (ctx argument name); cr; show: (ctx argument description); cr. ].
 	
