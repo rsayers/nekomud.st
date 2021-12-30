@@ -2,7 +2,7 @@
 I am the base class for any object in the world. I could be a player, room, weapon, etc.
 "
 Class {
-	#name : #MudThing,
+	#name : #NekoMudThing,
 	#superclass : #Object,
 	#instVars : [
 		'name',
@@ -15,67 +15,67 @@ Class {
 }
 
 { #category : #accessing }
-MudThing >> description [
+NekoMudThing >> description [
 
 	^ description
 ]
 
 { #category : #accessing }
-MudThing >> description: anObject [
+NekoMudThing >> description: anObject [
 
 	description := anObject
 ]
 
 { #category : #initialization }
-MudThing >> initialize [
-	stats := MudStats new.
+NekoMudThing >> initialize [
+	stats := NekoMudStats new.
 	items := OrderedCollection new.
 ]
 
 { #category : #accessing }
-MudThing >> items [
+NekoMudThing >> items [
 
 	^ items
 ]
 
 { #category : #accessing }
-MudThing >> items: anObject [
+NekoMudThing >> items: anObject [
 
 	items := anObject
 ]
 
 { #category : #accessing }
-MudThing >> location [
+NekoMudThing >> location [
 
 	^ location
 ]
 
 { #category : #accessing }
-MudThing >> location: aMudRoom [
+NekoMudThing >> location: aMudRoom [
 
 	location := aMudRoom
 ]
 
 { #category : #accessing }
-MudThing >> name [
+NekoMudThing >> name [
 
 	^ name
 ]
 
 { #category : #accessing }
-MudThing >> name: anObject [
+NekoMudThing >> name: anObject [
 
 	name := anObject
 ]
 
 { #category : #accessing }
-MudThing >> stats [
+NekoMudThing >> stats [
 
 	^ stats
 ]
 
 { #category : #accessing }
-MudThing >> stats: anObject [
+NekoMudThing >> stats: anObject [
 
 	stats := anObject
 ]

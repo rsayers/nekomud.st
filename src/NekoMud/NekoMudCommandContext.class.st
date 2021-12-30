@@ -1,5 +1,5 @@
 Class {
-	#name : #MudCommandContext,
+	#name : #NekoMudCommandContext,
 	#superclass : #Object,
 	#instVars : [
 		'player',
@@ -11,49 +11,49 @@ Class {
 }
 
 { #category : #accessing }
-MudCommandContext >> argument [
+NekoMudCommandContext >> argument [
 
 	^ argument
 ]
 
 { #category : #accessing }
-MudCommandContext >> argument: anObject [
+NekoMudCommandContext >> argument: anObject [
 
 	argument := anObject
 ]
 
 { #category : #accessing }
-MudCommandContext >> player [
+NekoMudCommandContext >> player [
 
 	^ player
 ]
 
 { #category : #accessing }
-MudCommandContext >> player: anObject [
+NekoMudCommandContext >> player: anObject [
 
 	player := anObject
 ]
 
 { #category : #accessing }
-MudCommandContext >> raw_command [
+NekoMudCommandContext >> raw_command [
 
 	^ raw_command
 ]
 
 { #category : #accessing }
-MudCommandContext >> raw_command: anObject [
+NekoMudCommandContext >> raw_command: anObject [
 
 	raw_command := anObject
 ]
 
 { #category : #accessing }
-MudCommandContext >> room [
+NekoMudCommandContext >> room [
 
 	^ room
 ]
 
 { #category : #accessing }
-MudCommandContext >> room: anObject [
+NekoMudCommandContext >> room: anObject [
 
 	room := anObject
 ]

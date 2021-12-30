@@ -1,5 +1,5 @@
 Class {
-	#name : #MudExit,
+	#name : #NekoMudPortal,
 	#superclass : #Object,
 	#instVars : [
 		'label',

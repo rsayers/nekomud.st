@@ -1,5 +1,5 @@
 Class {
-	#name : #MudStats,
+	#name : #NekoMudStats,
 	#superclass : #Object,
 	#instVars : [
 		'hp',
@@ -14,7 +14,7 @@ Class {
 }
 
 { #category : #accessing }
-MudStats >> + anotherStat [
+NekoMudStats >> + anotherStat [
 	^ self class new;
 	  hp: self hp + anotherStat hp;
 	  dex: self dex + anotherStat dex;
@@ -28,55 +28,55 @@ MudStats >> + anotherStat [
 ]
 
 { #category : #accessing }
-MudStats >> cha [
+NekoMudStats >> cha [
 
 	^ cha
 ]
 
 { #category : #accessing }
-MudStats >> cha: anObject [
+NekoMudStats >> cha: anObject [
 
 	cha := anObject
 ]
 
 { #category : #accessing }
-MudStats >> con [
+NekoMudStats >> con [
 
 	^ con
 ]
 
 { #category : #accessing }
-MudStats >> con: anObject [
+NekoMudStats >> con: anObject [
 
 	con := anObject
 ]
 
 { #category : #accessing }
-MudStats >> dex [
+NekoMudStats >> dex [
 
 	^ dex
 ]
 
 { #category : #accessing }
-MudStats >> dex: anObject [
+NekoMudStats >> dex: anObject [
 
 	dex := anObject
 ]
 
 { #category : #accessing }
-MudStats >> hp [
+NekoMudStats >> hp [
 
 	^ hp
 ]
 
 { #category : #accessing }
-MudStats >> hp: anObject [
+NekoMudStats >> hp: anObject [
 
 	hp := anObject
 ]
 
 { #category : #accessing }
-MudStats >> initialize [ 
+NekoMudStats >> initialize [ 
 	hp := 0.
 	str := 0. 
 	dex := 0. 
@@ -87,37 +87,37 @@ MudStats >> initialize [
 ]
 
 { #category : #accessing }
-MudStats >> int [
+NekoMudStats >> int [
 
 	^ int
 ]
 
 { #category : #accessing }
-MudStats >> int: anObject [
+NekoMudStats >> int: anObject [
 
 	int := anObject
 ]
 
 { #category : #accessing }
-MudStats >> str [
+NekoMudStats >> str [
 
 	^ str
 ]
 
 { #category : #accessing }
-MudStats >> str: anObject [
+NekoMudStats >> str: anObject [
 
 	str := anObject
 ]
 
 { #category : #accessing }
-MudStats >> wiz [
+NekoMudStats >> wiz [
 
 	^ wiz
 ]
 
 { #category : #accessing }
-MudStats >> wiz: anObject [
+NekoMudStats >> wiz: anObject [
 
 	wiz := anObject
 ]
