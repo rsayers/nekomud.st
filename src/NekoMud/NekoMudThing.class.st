@@ -9,7 +9,8 @@ Class {
 		'description',
 		'stats',
 		'items',
-		'location'
+		'location',
+		'component'
 	],
 	#category : #NekoMud
 }
@@ -30,6 +31,7 @@ NekoMudThing >> description: anObject [
 NekoMudThing >> initialize [
 	stats := NekoMudStats new.
 	items := OrderedCollection new.
+	component := NekoMudThingComponent new.
 ]
 
 { #category : #accessing }
@@ -66,6 +68,11 @@ NekoMudThing >> name [
 NekoMudThing >> name: anObject [
 
 	name := anObject
+]
+
+{ #category : #rendering }
+NekoMudThing >> renderContentOn: html [
+	html heading: name.
 ]
 
 { #category : #accessing }
